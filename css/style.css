@@ -4,14 +4,60 @@ body {
   height: 100vh;
   justify-content: space-between;
   flex-direction: column;
+  font-family: 'Roboto', sans-serif;
 }
+
+/*----FONT SELECTION----*/
+h1 {
+
+}
+
+h2 {
+
+}
+
+p {
+
+}
+
+/*----MAIN----*/
 
 main {
   width: 100%;
   height: 87%;
-  background-color: #b03532;
+  /*background-color: #b03532;*/
   display: grid;
   grid-template-columns: auto 33%;
+}
+
+.main-view{
+  /*background-color: yellow;*/
+}
+
+.main-sidebar{
+  /*background-color: blue;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sidebar-project{
+  margin: 20px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-project h1 {
+  font-weight: 500;
+  margin: 0;
+  font-size: 3em;
+}
+
+.sidebar-project p {
+  font-weight: 200;
+  margin: 0;
+  font-size: 1em;
 }
 
 /*----NAV BAR----*/
@@ -19,10 +65,15 @@ main {
 nav {
   width: 100%;
   height: 13%;
-  background-color: #1fef22;
+  /*background-color: #1fef22;*/
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+nav h2 {
+  font-size: 2.5em;
+  font-weight: 900;
 }
 
 nav > h2 {
