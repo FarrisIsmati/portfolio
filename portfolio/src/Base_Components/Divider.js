@@ -14,7 +14,7 @@ class Divider extends Component {
     let canvasHeight = canvas.clientHeight
     let canvasWidth = canvas.clientWidth
 
-    context.lineJoin = "miter"
+    context.lineCap = "round"
 
     // Gets need to remove the 'px' when setting lineWidth
     context.lineWidth = this.props.height.slice(0,-2)
@@ -33,8 +33,9 @@ class Divider extends Component {
     newWidthRight += increment
     newWidthLeft -= increment
 
-    if (newWidthRight < canvasWidth) {
+    if (newWidthRight < canvasWidth - 20) {
       context.lineTo(newWidthRight, (Math.floor(canvasHeight/2)))
+      context.stroke()
       context.lineTo(newWidthLeft, (Math.floor(canvasHeight/2)))
       context.stroke()
       setTimeout(() => {
@@ -72,7 +73,7 @@ Divider.propTypes = {
 
 Divider.defaultProps = {
   width: '100%',
-  height: '50px',
+  height: '40px',
   color: '#444444',
   lineWidth: 10
 }

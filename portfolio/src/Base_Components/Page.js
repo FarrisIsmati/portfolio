@@ -46,15 +46,20 @@ class Page extends Component {
       alignItems: 'center'
     }
 
-    return (
-      <div style={pageStyle}>
-        <Title ref="title" getTitleSize={this.getTitleSize} title={title} size={titleSize} />
-        { this.state.renderDivider ?
-          <Divider width={this.state.titleSize} height={height} /> :
-          <p>lol</p>
-        }
+    const hide = {
+      display: ''
+    }
 
-        {children}
+    return (
+      <div>
+        <div style={pageStyle}>
+          <Title ref="title" getTitleSize={this.getTitleSize} title={title} size={titleSize} />
+          { this.state.renderDivider ?
+            <Divider width={this.state.titleSize} height={height} /> :
+            null
+          }
+          {children}
+        </div>
       </div>
     )
   }
