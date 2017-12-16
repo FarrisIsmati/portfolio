@@ -72,4 +72,10 @@ Page.propTypes = {
   children: PropTypes.node
 }
 
+Page.defaultProps = {
+  titleSize: (
+    window.innerWidth / 38.1966077
+  )
+}
+
 export default Page

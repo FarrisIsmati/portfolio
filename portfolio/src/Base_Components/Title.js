@@ -38,4 +38,5 @@ Title.defaultProps = {
   size: '4em'
 }
 
+
 export default Title
