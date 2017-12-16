@@ -14,8 +14,6 @@ class Divider extends Component {
     let canvasHeight = canvas.clientHeight
     let canvasWidth = canvas.clientWidth
 
-    //context.lineCap = "round"
-
     // Gets need to remove the 'px' when setting lineWidth
     context.lineWidth = this.props.height.slice(0,-2)
     context.strokeStyle = this.props.color
@@ -23,23 +21,20 @@ class Divider extends Component {
     this.animate(context, canvasWidth, canvasHeight )
   }
 
-  animate(context, canvasWidth, canvasHeight, newWidthRight = canvasWidth/2, newWidthLeft = canvasWidth/2, increment = canvasWidth/400){
+  animate(context, canvasWidth, canvasHeight, newWidthRight = 0, increment = canvasWidth/400){
     context.beginPath()
     //Starting Position
-    context.moveTo(Math.floor(canvasWidth/2), (Math.floor(canvasHeight/2)))
+    context.moveTo(0, (Math.floor(canvasHeight/2)))
 
     //Increment left and right lines by
     increment += canvasWidth/(canvasWidth * 7)
     newWidthRight += increment
-    newWidthLeft -= increment
-
+    
     if (newWidthRight < canvasWidth) {
       context.lineTo(newWidthRight, (Math.floor(canvasHeight/2)))
       context.stroke()
-      context.lineTo(newWidthLeft, (Math.floor(canvasHeight/2)))
-      context.stroke()
       setTimeout(() => {
-        this.animate(context, canvasWidth, canvasHeight, newWidthRight, newWidthLeft, increment)
+        this.animate(context, canvasWidth, canvasHeight, newWidthRight, increment)
       }, 17)
     }
   }
@@ -74,7 +69,7 @@ Divider.propTypes = {
 Divider.defaultProps = {
   width: '100%',
   height: '40px',
-  color: '#444444',
+  color: '#353535',
   lineWidth: 10
 }
 

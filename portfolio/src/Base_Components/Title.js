@@ -16,13 +16,12 @@ class Title extends Component {
     const titleStyle = {
       color: color,
       fontSize: size,
-      margin: 0
+      margin: 0,
+      display: 'inline-block'
     }
 
     return (
-      <div>
-        <h1 ref="title" style={titleStyle} color={color}>{title}</h1>
-      </div>
+      <h1 ref="title" style={titleStyle} color={color}>{title}</h1>
     )
   }
 }
@@ -34,7 +33,6 @@ Title.propTypes = {
 }
 
 Title.defaultProps = {
-  color: '#444444',
   size: '4em'
 }
 

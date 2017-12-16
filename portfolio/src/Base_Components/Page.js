@@ -42,22 +42,23 @@ class Page extends Component {
     const pageStyle = {
       display: 'flex',
       flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center'
+      alignContent: 'flex-start'
     }
 
-    const hide = {
-      display: ''
+    const centerStyle = {
+
     }
 
     return (
       <div>
         <div style={pageStyle}>
-          <Title ref="title" getTitleSize={this.getTitleSize} title={title} size={titleSize} />
-          { this.state.renderDivider ?
-            <Divider width={this.state.titleSize} height={height} /> :
-            null
-          }
+          <div style={centerStyle}>
+            <Title ref="title" getTitleSize={this.getTitleSize} title={title} size={titleSize} />
+            { this.state.renderDivider ?
+              <Divider width={this.state.titleSize} height={height} /> :
+              null
+            }
+          </div>
           {children}
         </div>
       </div>
