@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import PropTypes            from 'prop-types'
 
 class Title extends Component {
+  componentDidMount() {
+    this.props.getTitleSize(this.refs.title.offsetWidth)
+  }
+
   render() {
     const {
       title,
@@ -11,12 +15,13 @@ class Title extends Component {
 
     const titleStyle = {
       color: color,
-      fontSize: size
+      fontSize: size,
+      margin: 0
     }
 
     return (
       <div>
-        <h1 style={titleStyle} color={color}>{title}</h1>
+        <h1 ref="title" style={titleStyle} color={color}>{title}</h1>
       </div>
     )
   }

@@ -7,7 +7,7 @@ class About extends Component {
   render() {
     return (
       <div>
-        <Page title={'ABOUT'} width={'400px'} height={'40px'}/>
+        <Page title={'ABOUT'} titleSize={'5em'} height={'30px'}/>
       </div>
     )
   }

@@ -5,11 +5,37 @@ import Title                from './Title'
 import Divider              from './Divider'
 
 class Page extends Component {
+  constructor(props){
+    super(props)
+
+    this.state = {
+      renderDivider: false,
+      titleSize: ''
+    }
+
+    this.getTitleSize = this.getTitleSize.bind(this)
+  }
+
+  getTitleSize(size) {
+    size += 'px'
+    this.setState({
+      titleSize: size
+    })
+  }
+
+  componentDidUpdate(){
+    if (!this.state.renderDivider){
+      this.setState({
+        renderDivider: true
+      })
+    }
+  }
+
   render() {
     const {
       title,
-      width,
       height,
+      titleSize,
       children
     } = this.props
 
@@ -22,8 +48,12 @@ class Page extends Component {
 
     return (
       <div style={pageStyle}>
-        <Title title={title}/>
-        <Divider width={width} height={height} />
+        <Title ref="title" getTitleSize={this.getTitleSize} title={title} size={titleSize} />
+        { this.state.renderDivider ?
+          <Divider width={this.state.titleSize} height={height} /> :
+          <p>lol</p>
+        }
+
         {children}
       </div>
     )
@@ -32,8 +62,8 @@ class Page extends Component {
 
 Page.propTypes = {
   title:    PropTypes.string,
-  width:    PropTypes.string,
   height:   PropTypes.string,
+  titleSize:     PropTypes.string,
   children: PropTypes.node
 }
 
