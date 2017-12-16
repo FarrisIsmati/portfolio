@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-import Divider from '../Base_Components/Divider'
+import Page from '../Base_Components/Page'
+
 
 class About extends Component {
   render() {
     return (
       <div>
-        <p>About</p>
-        <Divider width="600px" height="200px"/>
+        <Page title={'ABOUT'} width={'400px'} height={'40px'}/>
       </div>
     )
   }
