@@ -5,6 +5,7 @@ import Title                from './Title'
 import VerticleBar          from './VerticleBar'
 
 import                            '../Stylesheets/CommonClasses.css'
+import                            '../Stylesheets/Page.css'
 
 class Page extends Component {
   constructor(props){
@@ -62,12 +63,12 @@ class Page extends Component {
 
 
     return (
-      <div className="flex" ref="pageContainer">
+      <div className="flex flex-center page-margin" ref="pageContainer">
       { this.state.renderBar ?
         <VerticleBar width={'25px'} height={this.state.divHeight}/>:
         null
       }
-        <div className="flex flex_start">
+        <div className="flex flex-start">
           <div>
             <Title ref="title" getTitleSize={this.getTitleSize} title={title} size={titleWidth} />
           </div>
