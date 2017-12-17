@@ -88,9 +88,7 @@ Page.propTypes = {
 }
 
 Page.defaultProps = {
-  titleWidth: (
-    window.innerWidth / 38.1966077
-  )
+  titleWidth: (window.innerWidth * .0917) + 'px'
 }
 
 export default Page

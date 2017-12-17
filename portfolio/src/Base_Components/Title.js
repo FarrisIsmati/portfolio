@@ -32,9 +32,4 @@ Title.propTypes = {
   size: PropTypes.string
 }
 
-Title.defaultProps = {
-  size: '4em'
-}
-
-
 export default Title

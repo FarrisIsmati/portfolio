@@ -11,9 +11,11 @@ class About extends Component {
       lineHeight: '.98em',
     }
 
+    console.log((window.innerWidth * .0917) + 'px')
+
     return (
       <div>
-        <Page title={'About'} titleWidth={'8em'} height={'25px'}>
+        <Page title={'About'} titleWidth={(window.innerWidth * .0917) + 'px'} height={'25px'}>
           <p style={textStyle}>{aboutData}</p>
         </Page>
       </div>
