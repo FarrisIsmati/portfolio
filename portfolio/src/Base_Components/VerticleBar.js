@@ -1,9 +1,9 @@
 import React, { Component }         from 'react'
 import PropTypes                    from 'prop-types'
 
-import '../Stylesheets/Divider.css'
+import                                    '../Stylesheets/Bar.css'
 
-class DividerVerticle extends Component {
+class VerticleBar extends Component {
   constructor(props){
     super(props)
 
@@ -24,33 +24,33 @@ class DividerVerticle extends Component {
     this.animate(context, canvasWidth, canvasHeight )
   }
 
+  animate(context, canvasWidth, canvasHeight, newWidthBottom = canvasHeight/2, newWidthTop = canvasHeight/2, increment = canvasHeight/40){
+    context.beginPath()
+
+    //Starting Position
+    context.moveTo(canvasWidth/2, canvasHeight/2)
+
+    //Increment lines by
+    increment += canvasWidth/(canvasHeight * 2)
+    newWidthBottom += increment
+    newWidthTop -= increment
+
+    if (newWidthBottom < canvasHeight + 50) {
+      context.lineTo(canvasWidth/2, newWidthBottom)
+      context.lineTo(canvasWidth/2, newWidthTop)
+      context.stroke()
+      setTimeout(() => {
+        this.animate(context, canvasWidth, canvasHeight, newWidthBottom, newWidthTop, increment)
+      }, 17)
+    }
+  }
+
   componentDidUpdate() {
     this.setupCanvas()
   }
 
   componentDidMount() {
     this.setupCanvas()
-  }
-
-  animate(context, canvasWidth, canvasHeight, newWidthBottom = canvasHeight/2, newWidthTop = canvasHeight/2, increment = canvasHeight/40){
-    context.beginPath()
-    //Starting Position
-    context.moveTo(canvasWidth/2, canvasHeight/2)
-    console.log(canvasHeight/2)
-
-    //Increment line by
-    increment += canvasWidth/(canvasHeight * 2)
-    newWidthBottom += increment
-    newWidthTop -= increment
-
-    if (newWidthBottom < canvasHeight) {
-      context.lineTo(canvasWidth/2,newWidthBottom)
-      context.lineTo(canvasWidth/2,newWidthTop)
-      context.stroke()
-      setTimeout(() => {
-        this.animate(context, canvasWidth, canvasHeight, newWidthBottom, newWidthTop, increment)
-      }, 17)
-    }
   }
 
   render() {
@@ -61,7 +61,7 @@ class DividerVerticle extends Component {
     } = this.props
 
     return(
-      <div className={'divider_verticle'} ref="div">
+      <div className={'verticle_bar'} ref="div">
         <canvas
           ref="canvas"
           width={width}
@@ -73,18 +73,18 @@ class DividerVerticle extends Component {
   }
 }
 
-DividerVerticle.propTypes = {
+VerticleBar.propTypes = {
   width: PropTypes.string,
   height: PropTypes.string,
   color: PropTypes.string,
   lineWidth: PropTypes.number
 }
 
-DividerVerticle.defaultProps = {
+VerticleBar.defaultProps = {
   width: '25px',
   height: '100%',
   color: '#c42623',
   lineWidth: 10
 }
 
-export default DividerVerticle
+export default VerticleBar
