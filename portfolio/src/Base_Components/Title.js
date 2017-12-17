@@ -3,7 +3,7 @@ import PropTypes            from 'prop-types'
 
 class Title extends Component {
   componentDidMount() {
-    this.props.getTitleSize(this.refs.title.offsetWidth)
+    this.props.getTitleSize(this.refs.title.offsetWidth, this.refs.title.offsetHeight)
   }
 
   render() {

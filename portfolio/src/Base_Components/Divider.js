@@ -29,7 +29,7 @@ class Divider extends Component {
     //Increment left and right lines by
     increment += canvasWidth/(canvasWidth * 7)
     newWidthRight += increment
-    
+
     if (newWidthRight < canvasWidth) {
       context.lineTo(newWidthRight, (Math.floor(canvasHeight/2)))
       context.stroke()
@@ -69,7 +69,7 @@ Divider.propTypes = {
 Divider.defaultProps = {
   width: '100%',
   height: '40px',
-  color: '#353535',
+  color: '#c42623',
   lineWidth: 10
 }
 

@@ -4,6 +4,25 @@ import Page from '../Base_Components/Page'
 
 
 class About extends Component {
+  constructor(props){
+    super(props)
+
+    this.state = {
+      childrenHeight: ''
+    }
+
+    this.setChildrenHeight = this.setChildrenHeight.bind(this)
+  }
+
+  setChildrenHeight() {
+    this.setState({childrenHeight: this.refs.div.offsetHeight})
+  }
+
+  componentDidMount() {
+    this.setState({childrenHeight: this.refs.div.offsetHeight})
+    window.addEventListener("resize", this.setChildrenHeight)
+  }
+
   render() {
     const aboutData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim."
 
@@ -14,7 +33,7 @@ class About extends Component {
     return (
       <div>
         <Page title={'About'} titleSize={'8em'} height={'25px'}>
-          <div className="textBackground">
+          <div className="textBackground" ref={"div"} divheight={this.state.childrenHeight}>
             <p style={textStyle}>{aboutData}</p>
           </div>
         </Page>

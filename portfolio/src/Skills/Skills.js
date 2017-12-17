@@ -7,7 +7,7 @@ class Skills extends Component {
   render() {
     return (
       <div>
-        <Page title={'Skills'} titleSize={'6em'} height={'20px'}/>
+        <Page title={'Skills'} titleSize={'8em'} height={'25px'}/>
       </div>
     )
   }

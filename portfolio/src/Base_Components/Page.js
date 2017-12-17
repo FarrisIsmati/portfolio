@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes            from 'prop-types'
 
 import Title                from './Title'
+import DividerVerticle      from './DividerVerticle'
 import Divider              from './Divider'
 
 class Page extends Component {
@@ -10,25 +11,41 @@ class Page extends Component {
 
     this.state = {
       renderDivider: false,
-      titleSize: ''
+      titleSize: '',
+      titleHeight: '',
+      divHeight: ''
     }
 
+    this.getDivHeight = this.getDivHeight.bind(this)
     this.getTitleSize = this.getTitleSize.bind(this)
   }
 
-  getTitleSize(size) {
+  getTitleSize(size, height) {
     size += 'px'
     this.setState({
-      titleSize: size
+      titleSize: size,
+      titleHeight: height
     })
   }
 
+  getDivHeight() {
+    this.setState({divHeight: (this.props.children.props.divheight + this.state.titleHeight) + 'px'})
+  }
+
   componentDidUpdate(){
+    //Updated by getting title height, then render Divider
     if (!this.state.renderDivider){
+      window.addEventListener("resize", this.getDivHeight);
+
       this.setState({
         renderDivider: true
       })
     }
+  }
+
+  componentDidMount(){
+    //Set initial height of Verticle Divider
+    this.setState({divHeight: this.refs.pageContainer.offsetHeight + 'px'})
   }
 
   render() {
@@ -45,19 +62,19 @@ class Page extends Component {
       alignContent: 'flex-start'
     }
 
-    const centerStyle = {
-
+    const flexStyle = {
+      display: 'flex'
     }
 
     return (
-      <div>
+      <div style={flexStyle} ref="pageContainer">
+      { this.state.renderDivider ?
+        <DividerVerticle width={'25px'} height={this.state.divHeight}/>:
+        null
+      }
         <div style={pageStyle}>
-          <div style={centerStyle}>
+          <div>
             <Title ref="title" getTitleSize={this.getTitleSize} title={title} size={titleSize} />
-            { this.state.renderDivider ?
-              <Divider width={this.state.titleSize} height={height} /> :
-              null
-            }
           </div>
           {children}
         </div>
