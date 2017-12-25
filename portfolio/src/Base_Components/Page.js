@@ -34,13 +34,13 @@ class Page extends Component {
 
   //Sets to state the height of the div containing the title and child elements
   getDivHeight() {
-    this.setState({divHeight: (this.refs.children.offsetHeight + this.state.titleHeight) + 'px'})
+    this.setState({divHeight: (this.refs.children.offsetHeight + this.refs.title.refs.title.offsetHeight) + 'px'})
   }
 
   componentDidUpdate(){
     //Once component gets height/width data in state then render the bar
     if (!this.state.renderBar){
-      window.addEventListener("resize", this.getDivHeight);
+      window.addEventListener("resize", this.getDivHeight)
 
       this.setState({
         renderBar: true
@@ -56,14 +56,12 @@ class Page extends Component {
   render() {
     const {
       title,
-      height,
       titleWidth,
       children
     } = this.props
 
-
     return (
-      <div className="flex flex-center page-margin" ref="pageContainer">
+      <div className="flex flex-center" ref="pageContainer">
       { this.state.renderBar ?
         <VerticleBar width={'25px'} height={this.state.divHeight}/>:
         null
@@ -83,7 +81,6 @@ class Page extends Component {
 
 Page.propTypes = {
   title:    PropTypes.string,
-  height:   PropTypes.string,
   titleWidth:     PropTypes.string,
   children: PropTypes.node
 }
