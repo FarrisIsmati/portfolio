@@ -16,7 +16,6 @@ class VerticleBar extends Component {
     let context = canvas.getContext("2d")
     let canvasHeight = canvas.clientHeight
     let canvasWidth = canvas.clientWidth
-
     // Gets need to remove the 'px' when setting lineWidth
     context.lineWidth = this.props.width.slice(0,-2)
     context.strokeStyle = this.props.color

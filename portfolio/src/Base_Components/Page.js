@@ -34,7 +34,7 @@ class Page extends Component {
 
   //Sets to state the height of the div containing the title and child elements
   getDivHeight() {
-    this.setState({divHeight: (this.refs.children.offsetHeight + this.refs.title.refs.title.offsetHeight) + 'px'})
+    this.setState({divHeight: this.refs.pageContainer.offsetHeight + 'px'})
   }
 
   componentDidUpdate(){
@@ -61,16 +61,16 @@ class Page extends Component {
     } = this.props
 
     return (
-      <div className="flex flex-center" ref="pageContainer">
+      <div className="flex">
       { this.state.renderBar ?
         <VerticleBar width={'25px'} height={this.state.divHeight}/>:
         null
       }
-        <div className="flex flex-start">
+        <div ref="pageContainer" className="flex flex-start">
           <div>
-            <Title ref="title" getTitleSize={this.getTitleSize} title={title} size={titleWidth} />
+            <Title getTitleSize={this.getTitleSize} title={title} size={titleWidth} />
           </div>
-          <div ref={"children"}>
+          <div>
             {children}
           </div>
         </div>
