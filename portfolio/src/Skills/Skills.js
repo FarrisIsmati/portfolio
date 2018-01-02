@@ -9,11 +9,11 @@ class Skills extends Component {
   render() {
     return (
       <Page title={'Skills'} titleWidth={(window.innerWidth * .0917) + 'px'} height={'25px'}>
-        <div className="flex content-container">
+        <div className="flex">
           <Content data={
             {
-              'Frontend,': {data: 'ReactJS'},
-              'Backend': {data: 'NodeJS'},
+              'Frontend,': {data: 'ReactJS', active: true},
+              'Backend': {data: 'NodeJS', active: false},
             }
           }/>
         </div>

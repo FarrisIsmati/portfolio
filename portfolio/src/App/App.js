@@ -80,7 +80,7 @@ class App extends Component {
   render() {
     return (
       <div className="app-main">
-        <Element name="home" className="element">
+        <Element name="home" className="element-start">
           <Home>
             <div className="flex content-container">
               <p>
@@ -101,13 +101,13 @@ class App extends Component {
             </div>
           </Home>
         </Element>
-        <Element name="projects" className="element">
+        <Element name="projects" className="element-start">
           <Projects />
         </Element>
-        <Element name="skills" className="element">
+        <Element name="skills" className="element-start">
           <Skills />
         </Element>
-        <Element name="about" className="element">
+        <Element name="about" className="element-start">
           <About />
         </Element>
       </div>

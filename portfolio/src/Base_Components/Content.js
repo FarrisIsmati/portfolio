@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes            from 'prop-types'
 
-import ActiveButton         from './ActiveButton'
-
 import                           '../Stylesheets/CommonClasses.css'
 
 class Content extends Component {
@@ -44,7 +42,6 @@ class Content extends Component {
     })
   }
 
-  //<ActiveButton active={true} key={index} properties={data} click={() => this.onClick(data, nav)}/>
   render() {
     const {
       data

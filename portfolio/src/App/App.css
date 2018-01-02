@@ -8,3 +8,16 @@
   display: flex;
   align-items: center;
 }
+
+.element-start {
+  padding: 10% 0 0 0;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.element-end {
+  margin-bottom: 25%;
+  display: flex;
+  align-items: flex-start;
+}

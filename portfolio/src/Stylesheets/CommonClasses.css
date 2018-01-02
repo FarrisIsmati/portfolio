@@ -20,15 +20,16 @@
 .content-container p {
   font-size: 1.4em;
   margin-right: 10px;
+  color: #353535;
 }
 
 .content-container p:hover {
   cursor: pointer;
-  color: #C42623;
+  color: #C42623 !important;
   transition: color 0.4s ease;
 }
 
 .content-container p:active {
-  color: #EC9493;
+  color: #EC9493 !important;
   transition: color 0.1s ease;
 }
