@@ -7,7 +7,28 @@
   justify-content: center;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
+
 .flex-start {
   flex-direction: column;
   align-content: flex-start;
+}
+
+.content-container p {
+  font-size: 1.4em;
+  margin-right: 10px;
+}
+
+.content-container p:hover {
+  cursor: pointer;
+  color: #C42623;
+  transition: color 0.4s ease;
+}
+
+.content-container p:active {
+  color: #EC9493;
+  transition: color 0.1s ease;
 }

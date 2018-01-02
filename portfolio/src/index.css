@@ -8,6 +8,10 @@ body {
   font-family: sans-serif;
 }
 
+h1, p, a {
+  user-select: none;
+}
+
 h1 {
   margin: 0;
   font-family: 'Roboto Condensed', sans-serif;
@@ -19,6 +23,26 @@ p {
   font-size: 1.3em;
   color: #353535;
   margin: 0;
+  transition: color 0.2s ease;
+}
+
+a {
+  font-family: 'Cabin', sans-serif;
+  font-size: 1.3em;
+  color: #353535;
+  margin: 0;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #C42623;
+  transition: color 0.4s ease;
+}
+
+a:active {
+  color: #EC9493;
+  transition: color 0.1s ease;
 }
 
 /*.textBackground {

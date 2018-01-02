@@ -16,7 +16,6 @@ class Page extends Component {
       titleWidth: '',
       titleHeight: '',
       divHeight: '',
-
     }
 
     this.getDivHeight = this.getDivHeight.bind(this)
@@ -57,13 +56,18 @@ class Page extends Component {
     const {
       title,
       titleWidth,
-      children
+      children,
+      showBar
     } = this.props
 
     return (
-      <div className="flex">
-      { this.state.renderBar ?
-        <VerticleBar width={'25px'} height={this.state.divHeight}/>:
+      <div className="flex  ">
+      {
+        this.state.renderBar ?
+        showBar ?
+        <VerticleBar width={'25px'} height={this.state.divHeight}/> :
+        null
+        :
         null
       }
         <div ref="pageContainer" className="flex flex-start">
@@ -82,10 +86,12 @@ class Page extends Component {
 Page.propTypes = {
   title:    PropTypes.string,
   titleWidth:     PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
+  showBar: PropTypes.bool
 }
 
 Page.defaultProps = {
+  showBar: false,
   titleWidth: (window.innerWidth * .0917) + 'px'
 }
 

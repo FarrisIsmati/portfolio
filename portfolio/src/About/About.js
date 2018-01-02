@@ -2,7 +2,7 @@ import React                from 'react'
 
 import Page                 from '../Base_Components/Page'
 
-const aboutData = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia."
+const aboutData = "Prior to General Assembly I gained a small amount of web development experience in college. Realizing how much fun developing applications is, I decided to enroll at General Assembly. The course has done nothing but reinforce the fact that I want to be a web developer. It's a fun, challenging, and mainly rewarding experience."
 
 const textStyle = {
   lineHeight: '.98em',
