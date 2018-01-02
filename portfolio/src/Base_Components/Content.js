@@ -26,10 +26,22 @@ class Content extends Component {
 
   onClick(data, nav) {
     this.showData(data)
-  }
 
-  componentDidMount() {
-    console.log(this.state.buttons)
+    let buttons = Object.assign({}, this.state.buttons)
+
+    Object.keys(this.state.buttons).forEach((obj) => {
+      if (obj != data){
+        let inactiveState = Object.assign({}, buttons[obj])
+        let activeState = Object.assign({}, buttons[data])
+        activeState.active = true
+        inactiveState.active = false
+        buttons[obj] = inactiveState
+        buttons[data] = activeState
+        this.setState({
+          buttons: buttons
+        })
+      }
+    })
   }
 
   //<ActiveButton active={true} key={index} properties={data} click={() => this.onClick(data, nav)}/>
