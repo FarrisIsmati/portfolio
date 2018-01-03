@@ -10,7 +10,7 @@ class Home extends Component {
     } = this.props
 
     return (
-      <Page showBar={true} title={'Hello, my name is Farris.'} titleWidth={(window.innerWidth * .0917) + 'px'} height={'25px'}>
+      <Page showBar={true} title={'Farris Ismati, Web Developer'} titleWidth={(window.innerWidth * .0917) + 'px'} height={'25px'}>
         {children}
       </Page>
     )

@@ -42,6 +42,10 @@ class Content extends Component {
     })
   }
 
+  componentDidMount() {
+    console.log(this.state.content.image)
+  }
+
   render() {
     const {
       data
@@ -67,14 +71,28 @@ class Content extends Component {
       }
     })
 
+    let content = this.state.content.data.map((data,index) => {
+      console.log(data)
+      return(
+        <p key={index}>{data}</p>
+      )
+    })
+
     return (
       <div>
-        <div className="flex content-container">
+        <div className="flex content-container-nav">
           {nav}
         </div>
 
-        <div>
-          <p>{this.state.content.data}</p>
+        <div className="flex flex-column content-container">
+          {
+            this.state.content.image ?
+            <a target="_blank" href={this.state.content.link}><img src={this.state.content.image}/></a> :
+            null
+          }
+          <div className="flex">
+            {content}
+          </div>
         </div>
       </div>
     )

@@ -12,8 +12,10 @@ class Skills extends Component {
         <div className="flex">
           <Content data={
             {
-              'Frontend,': {data: 'ReactJS', active: true},
-              'Backend': {data: 'NodeJS', active: false},
+              'Frontend,': {data: ['ReactJS','JavaScript/ES6', 'HTML5','CSS3','jQuery'], active: true},
+              'Backend,': {data: ['NodeJS','ExpressJS','MongoDB','PostGres SQL'], active: false},
+              'General,': {data: ['Git/Github', 'Object Oriented Programming', 'MVC Design Pattern'], active: false},
+              'Other': {data: ['Adobe Creative Cloud'], active: false}
             }
           }/>
         </div>

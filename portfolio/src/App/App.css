@@ -10,8 +10,7 @@
 }
 
 .element-start {
-  padding: 10% 0 0 0;
-  height: 100%;
+  margin-bottom: 150px;
   display: flex;
   align-items: flex-start;
 }
