@@ -52,11 +52,11 @@ class Content extends Component {
     } = this.props
 
     const active = {
-      'color': '#C42623'
+      'color': '#C3073F'
     }
 
     const inactive = {
-      'color': '#353535'
+      'color': '#FFFFFF'
     }
 
     let nav = Object.keys(data).map((data,index) => {

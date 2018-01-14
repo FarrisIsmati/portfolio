@@ -4,12 +4,12 @@ import Page                 from '../Base_Components/Page'
 import Content              from '../Base_Components/Content'
 
 import                           '../Stylesheets/CommonClasses.css'
-
+import                           '../Stylesheets/Projects.css'
 class Projects extends Component {
   render() {
     return (
       <div>
-        <Page title={'Projects'} titleWidth={(window.innerWidth * .0917) + 'px'} height={'25px'}>
+        <Page css={'projects'} cssTitle={'projects-title'} title={'Projects'} titleWidth={(window.innerWidth * .0917) + 'px'} height={'25px'}>
           <Content data={
             {
               'You Suck at Art,': {data: ['A telestrations inspired game built using React, Node, and MongoDB'], image: 'https://image.ibb.co/b5DEuw/Screen_Shot_2018_01_03_at_9_40_41_AM.png', link: 'http://yousuckatart.surge.sh/', active: true},

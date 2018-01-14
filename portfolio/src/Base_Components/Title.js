@@ -15,7 +15,7 @@ class Title extends Component {
 
     const titleStyle = {
       color: color,
-      fontSize: size,
+      fontSize: '4em',
       margin: 0,
       display: 'inline-block'
     }

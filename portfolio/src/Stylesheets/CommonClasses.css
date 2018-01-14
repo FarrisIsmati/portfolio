@@ -25,18 +25,16 @@
   margin-top: 10px;
   font-size: 1.4em;
   margin-right: 10px;
-  color: #353535;
 }
 
 .content-container-nav p {
   font-size: 1.6em;
   margin-right: 10px;
-  color: #353535;
 }
 
 .content-container-nav p:hover {
   cursor: pointer;
-  color: #C42623 !important;
+  color: #C3073F !important;
   transition: color 0.4s ease;
 }
 

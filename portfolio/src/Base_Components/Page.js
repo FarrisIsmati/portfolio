@@ -57,11 +57,13 @@ class Page extends Component {
       title,
       titleWidth,
       children,
-      showBar
+      showBar,
+      css,
+      cssTitle
     } = this.props
 
     return (
-      <div className="flex">
+      <div className={"flex " + css}>
       {
         this.state.renderBar ?
         showBar ?
@@ -71,7 +73,7 @@ class Page extends Component {
         null
       }
         <div ref="pageContainer" className="flex flex-start">
-          <div>
+          <div className={'page-title ' + cssTitle}>
             <Title getTitleSize={this.getTitleSize} title={title} size={titleWidth} />
           </div>
           <div ref="children">
@@ -84,6 +86,8 @@ class Page extends Component {
 }
 
 Page.propTypes = {
+  css:      PropTypes.string,
+  cssTitle: PropTypes.string,
   title:    PropTypes.string,
   titleWidth:     PropTypes.string,
   children: PropTypes.node,

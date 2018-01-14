@@ -1,0 +1,26 @@
+#element-projects:hover .projects-title h1:before {
+  right: 0px;
+  border-color: rgba(195,7,63,1) !important;
+  margin-right: 15px;
+  transition: margin-right 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              right .3s ease,
+              border-color .2s ease-in;
+}
+
+
+.projects-title h1:before {
+  content: '';
+  position: relative;
+  border-color: rgba(195,7,63,0) !important;
+  right: 35px;
+  border-left: 20px solid;
+  margin-right: -20px;
+  transition: margin-right 0.3s ease-out,
+              right .1s ease-out,
+              border-color .1s ease;
+}
+
+
+.projects {
+  padding: 7% 0 7% 0;
+}

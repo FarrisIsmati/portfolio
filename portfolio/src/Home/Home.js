@@ -3,6 +3,8 @@ import PropTypes            from 'prop-types'
 
 import Page                 from '../Base_Components/Page'
 
+import '../Stylesheets/Home.css'
+
 class Home extends Component {
   render() {
     const {
@@ -10,7 +12,7 @@ class Home extends Component {
     } = this.props
 
     return (
-      <Page showBar={true} title={'Farris Ismati, Web Developer'} titleWidth={(window.innerWidth * .0917) + 'px'} height={'25px'}>
+      <Page css={'home'} title={'Farris Ismati, Web Developer'} titleWidth={(window.innerWidth * .0917) + 'px'} height={'25px'}>
         {children}
       </Page>
     )
