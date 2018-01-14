@@ -43,7 +43,7 @@ a:hover {
 }
 
 a:active {
-  color: #EC9493;
+  color: #EC9493  ;
   transition: color 0.1s ease;
 }
 
