@@ -71,13 +71,6 @@ class Content extends Component {
       }
     })
 
-    let content = this.state.content.data.map((data,index) => {
-      console.log(data)
-      return(
-        <p key={index}>{data}</p>
-      )
-    })
-
     return (
       <div>
         <div className="flex content-container-nav">
@@ -87,20 +80,31 @@ class Content extends Component {
         <div className="flex flex-column content-container">
           {
             this.state.content.image ?
-            <a target="_blank" href={this.state.content.link}><img src={this.state.content.image}/></a> :
+            <div className="img-holder">
+              <a target="_blank" href={this.state.content.link}><img src={this.state.content.image}/></a>
+            </div> :
             null
           }
           <div className="flex">
-            {content}
+            {
+              this.state.content.projects ?
+              <div>
+                <p>Built with: {this.state.content.tech}</p>
+                <p>{this.state.content.info}</p>
+                <a target="_blank" href={this.state.content.github}><p>Github</p></a>
+              </div>
+
+
+
+
+              :
+              <p>{this.state.content.data }</p>
+            }
           </div>
         </div>
       </div>
     )
   }
-}
-
-Content.propTypes = {
-  data: PropTypes.object
 }
 
 export default Content
