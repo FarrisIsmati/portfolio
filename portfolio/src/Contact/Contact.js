@@ -8,7 +8,9 @@ const textStyle = {
 
 const Contact = () => (
   <Page css={'contact'} cssTitle={'contact-title'} title={'Contact'} titleWidth={(window.innerWidth * .0917) + 'px'} height={'25px'}>
-    <p style={textStyle}>Is that for me???</p>
+    <p>703.980.2219</p>
+    <p>farris.ismati@gmail.com</p>
+    <a target="_blank" href="https://github.com/FarrisIsmati"><p className="link">Github</p></a>
   </Page>
 )
 

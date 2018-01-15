@@ -24,3 +24,13 @@
 .contact {
   padding: 7% 0 7% 0;
 }
+
+.link {
+  font-weight: 400;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: #C3073F;
+  transition: color 0.3s ease;
+}

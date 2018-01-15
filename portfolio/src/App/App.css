@@ -14,7 +14,7 @@
 }
 
 .element-end {
-  margin-bottom: 25%;
+  margin-bottom: 8%;
   display: flex;
   align-items: flex-start;
 }
@@ -26,14 +26,21 @@
   transform: translate(0, -50%);
 }
 
-.arrow-holder .glyphicon {
+.glyphicon {
   font-size: 2em;
   color: #FFFFFF;
   transition: color 0.2s ease;
 }
 
-.arrow-holder .glyphicon:hover {
+.glyphicon:hover {
   color: #C3073F;
   cursor: pointer;
   transition: color 0.3s ease;
+}
+
+.arrow-holder-bottom {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

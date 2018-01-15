@@ -11,7 +11,8 @@ class Content extends Component {
       content: this.props.data[Object.keys(this.props.data)[0]],
       buttons: this.props.data
     }
-
+    console.log(this.state.content.data)
+    console.log(this.props)
     this.showData = this.showData.bind(this)
     this.onClick = this.onClick.bind(this)
   }
@@ -71,6 +72,12 @@ class Content extends Component {
       }
     })
 
+    let skills = this.state.content.data ? this.state.content.data.map((data, index) => {
+      return (
+        <p key={index} className="skill">{data}</p>
+      )
+    }) : null
+
     return (
       <div>
         <div className="flex content-container-nav">
@@ -91,7 +98,9 @@ class Content extends Component {
 
               </div>
               :
-              <p>{this.state.content.data }</p>
+              <div className="flex">
+                {this.state.content.data ? skills:null}
+              </div>
             }
           </div>
         </div>

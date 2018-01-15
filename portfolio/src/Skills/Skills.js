@@ -14,17 +14,17 @@ class Skills extends Component {
           <Content data={
             {
               'Frontend,': {
-                data: ['ReactJS', 'JavaScript/ES6', 'HTML5','CSS3','jQuery'],
+                data: ['ReactJS,', 'JavaScript/ES6,', 'HTML5,','CSS3,','jQuery'],
                 active: true,
                 page: 'skills'
               },
               'Backend,': {
-                data: ['NodeJS','ExpressJS','MongoDB','PostGres SQL'],
+                data: ['NodeJS,','ExpressJS,','MongoDB,','SQL'],
                 active: false,
                 page: 'skills'
               },
               'General,': {
-                data: ['Git/Github', 'Object Oriented Programming', 'MVC Design Pattern'],
+                data: ['Git/Github,', 'Object Oriented Programming,', 'MVC Design Pattern'],
                 active: false,
                 page: 'skills'
               },

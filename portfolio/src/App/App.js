@@ -117,6 +117,11 @@ class App extends Component {
         <Element id="element-contact" name="contact" className="element-padding element-end">
           <Contact />
         </Element>
+        <div className="arrow-holder-bottom">
+          <Link activeClass="active" to="home" spy={true} smooth={true} duration={500} >
+            <Glyphicon glyph="glyphicon glyphicon-chevron-up" />
+          </Link>
+        </div>
       </div>
     )
   }
