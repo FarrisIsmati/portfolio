@@ -9,7 +9,6 @@
 }
 
 .element-start {
-  margin-bottom: 150px;
   display: flex;
   align-items: flex-start;
 }
@@ -18,4 +17,23 @@
   margin-bottom: 25%;
   display: flex;
   align-items: flex-start;
+}
+
+.arrow-holder {
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  transform: translate(0, -50%);
+}
+
+.arrow-holder .glyphicon {
+  font-size: 2em;
+  color: #FFFFFF;
+  transition: color 0.2s ease;
+}
+
+.arrow-holder .glyphicon:hover {
+  color: #C3073F;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }

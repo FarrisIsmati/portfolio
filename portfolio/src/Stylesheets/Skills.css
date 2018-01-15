@@ -1,4 +1,4 @@
-#element-projects:hover .projects-title h1:before {
+#element-skills:hover .skills-title h1:before {
   right: 0px;
   border-color: rgba(195,7,63,1) !important;
   margin-right: 15px;
@@ -8,7 +8,7 @@
 }
 
 
-.projects-title h1:before {
+.skills-title h1:before {
   content: '';
   position: relative;
   border-color: rgba(195,7,63,0) !important;
@@ -21,24 +21,6 @@
 }
 
 
-.projects {
+.skills {
   padding: 7% 0 7% 0;
-}
-
-.content-tech {
-  font-weight: 400;
-}
-
-.content-info {
-  font-weight: 200;
-}
-
-.link {
-  font-weight: 400;
-  transition: color 0.2s ease;
-}
-
-.link:hover {
-  color: #C3073F;
-  transition: color 0.3s ease;
 }

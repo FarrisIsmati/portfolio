@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes            from 'prop-types'
 
 import                           '../Stylesheets/CommonClasses.css'
-
+import                           '../Stylesheets/Contact.css'
 class Content extends Component {
   constructor(props) {
     super(props)
@@ -78,25 +78,18 @@ class Content extends Component {
         </div>
 
         <div className="flex flex-column content-container">
-          {
-            this.state.content.image ?
-            <div className="img-holder">
-              <a target="_blank" href={this.state.content.link}><img src={this.state.content.image}/></a>
-            </div> :
-            null
-          }
           <div className="flex">
             {
               this.state.content.projects ?
               <div>
-                <p>Built with: {this.state.content.tech}</p>
-                <p>{this.state.content.info}</p>
-                <a target="_blank" href={this.state.content.github}><p>Github</p></a>
+                <p className="content-tech">{this.state.content.tech}</p>
+                <p className="content-info">{this.state.content.info}</p>
+                <div className="flex">
+                  <a target="_blank" href={this.state.content.github}><p className="link">Github</p></a>
+                  <a target="_blank" href={this.state.content.link}><p className="link">Live</p></a>
+                </div>
+
               </div>
-
-
-
-
               :
               <p>{this.state.content.data }</p>
             }

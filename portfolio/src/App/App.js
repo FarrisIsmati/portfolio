@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Glyphicon }        from 'react-bootstrap'
 import {
   Link,
   DirectLink,
@@ -13,6 +14,7 @@ import Home                 from '../Home/Home'
 import About                from '../About/About'
 import Skills               from '../Skills/Skills'
 import Projects             from '../Projects/Projects'
+import Contact              from '../Contact/Contact'
 
 import                           './App.css'
 import                           '../Stylesheets/CommonClasses.css'
@@ -84,7 +86,7 @@ class App extends Component {
           <Home>
             <div className="flex content-container">
               <p>
-                <Link activeClass="active" to="projects" spy={true} smooth={true} duration={500} >
+                <Link activeClass="active" to="projects" spy={true} smooth={true} duration={600} >
                   Projects,
                 </Link>
               </p>
@@ -94,12 +96,17 @@ class App extends Component {
                 </Link>
               </p>
               <p>
-                <Link activeClass="active" to="about" spy={true} smooth={true} duration={500} >
-                  About
+                <Link activeClass="active" to="contact" spy={true} smooth={true} duration={500} >
+                  Contact
                 </Link>
               </p>
             </div>
           </Home>
+          <div className="arrow-holder">
+            <Link activeClass="active" to="projects" spy={true} smooth={true} duration={500} >
+              <Glyphicon glyph="glyphicon glyphicon-chevron-down" />
+            </Link>
+          </div>
         </Element>
         <Element id="element-projects" name="projects" className="element-padding element-start">
           <Projects />
@@ -107,8 +114,8 @@ class App extends Component {
         <Element id="element-skills" name="skills" className="element-padding element-start">
           <Skills />
         </Element>
-        <Element id="element-about" name="about" className="element-padding element-end">
-          <About />
+        <Element id="element-contact" name="contact" className="element-padding element-end">
+          <Contact />
         </Element>
       </div>
     )
