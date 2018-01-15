@@ -12,7 +12,7 @@ class Home extends Component {
     } = this.props
 
     return (
-      <Page css={'home'} title={'Farris Ismati, Web Developer'} titleWidth={(window.innerWidth * .0917) + 'px'} height={'25px'}>
+      <Page css={'home'} title={'Farris Ismati,'} titleUnder={'Web Developer'} titleWidth={(window.innerWidth * .0917) + 'px'} height={'25px'}>
         {children}
       </Page>
     )

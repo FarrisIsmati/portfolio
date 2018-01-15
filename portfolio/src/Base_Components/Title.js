@@ -9,6 +9,7 @@ class Title extends Component {
   render() {
     const {
       title,
+      titleUnder,
       color,
       size
     } = this.props
@@ -21,7 +22,10 @@ class Title extends Component {
     }
 
     return (
-      <h1 ref="title" style={titleStyle} color={color}>{title}</h1>
+      <div>
+        <h1 ref="title" style={titleStyle} color={color}>{title}</h1>
+        { titleUnder ? <h1 style={titleStyle} color={color}>{titleUnder}</h1>:null }
+      </div>
     )
   }
 }

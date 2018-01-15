@@ -55,6 +55,7 @@ class Page extends Component {
   render() {
     const {
       title,
+      titleUnder,
       titleWidth,
       children,
       showBar,
@@ -74,7 +75,7 @@ class Page extends Component {
       }
         <div ref="pageContainer" className="flex flex-start">
           <div className={'page-title ' + cssTitle}>
-            <Title getTitleSize={this.getTitleSize} title={title} size={titleWidth} />
+            <Title getTitleSize={this.getTitleSize} title={title} titleUnder={titleUnder} size={titleWidth} />
           </div>
           <div ref="children">
             {children}
