@@ -53,6 +53,13 @@ a:active {
   padding: 0 19.098% 0 19.098%;
 }
 
+.border {
+  display:table-cell;
+  empty-cells:hide;
+  margin: 3px 8px;
+  border-left: 2px solid #C3073F;
+}
+
 /*--MEDIA QUERIES--*/
 
 @media (max-width : 768px) {
@@ -70,5 +77,21 @@ a:active {
 
   p, a {
     font-size: 1.5em;
+  }
+
+  .home:before {
+    content: none !important;
+    position: relative;
+    right: 0 !important;
+    border: none !important;
+    margin-right: 0 !important;
+  }
+
+  .project-link-holder, .code-link-holder {
+    flex-direction: column;
+  }
+
+  .border {
+    display: none;
   }
 }

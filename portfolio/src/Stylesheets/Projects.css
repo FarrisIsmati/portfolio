@@ -33,6 +33,18 @@
   font-weight: 200;
 }
 
+.project-link-holder {
+  margin-top: 5px;
+}
+
+.project-link-holder p {
+  margin: 0;
+}
+
+.project-link-holder a {
+  font-size: 1.4em;
+}
+
 .link {
   font-weight: 400;
   transition: color 0.2s ease;

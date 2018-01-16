@@ -14,7 +14,7 @@ class Skills extends Component {
           <Content data={
             {
               'Frontend,': {
-                data: ['ReactJS,', 'JavaScript/ES6,', 'HTML5,','CSS3,','jQuery'],
+                data: ['ReactJS,', 'Redux,', 'ES6,', ,'jQuery,', 'HTML5,','CSS3'],
                 active: true,
                 page: 'skills'
               },
@@ -24,7 +24,7 @@ class Skills extends Component {
                 page: 'skills'
               },
               'General,': {
-                data: ['Git/Github,', 'Object Oriented Programming,', 'MVC Design Pattern'],
+                data: ['Functional Programming,', 'Object Oriented Programming,', 'Unit Testing,', 'Git,', 'MVC Patterns'],
                 active: false,
                 page: 'skills'
               },

@@ -15,6 +15,7 @@ class Projects extends Component {
               'You Suck at Art,': {
                 info: 'A draw and guess game inspired by Chinese Whispers also known as telephone. One user has to draw a random phrase, then next user has to guess what that drawing is. This cycle goes on depending on the number of players. A General Assembly group project by Farris Ismati, Steven Connors, & Jack Tyburski',
                 github: 'https://github.com/FarrisIsmati/telestrations_online',
+                backend: 'https://github.com/StevenC53/telestrations_online_back_end',
                 projects: true,
                 tech: 'React.js, Node.js, Express.js, HTML Canvas, Mongoose, & MongoDB',
                 image: 'https://image.ibb.co/b5DEuw/Screen_Shot_2018_01_03_at_9_40_41_AM.png', link: 'http://yousuckatart.surge.sh/',

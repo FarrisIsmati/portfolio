@@ -25,6 +25,11 @@
   padding: 5% 0;
 }
 
+.contact p, .contact a {
+  font-size: 1.4em;
+  font-weight: 200;
+}
+
 .link {
   font-weight: 400;
   transition: color 0.2s ease;
