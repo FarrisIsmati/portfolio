@@ -15,6 +15,7 @@ h1, p, a {
 }
 
 h1 {
+  font-size: 6em;
   margin: 0;
   font-family: 'Raleway';
   font-weight: 700;
@@ -23,7 +24,7 @@ h1 {
 p {
   font-family: 'Raleway';
   font-weight: 400;
-  font-size: 1.3em;
+  font-size: 2em;
   margin: 0;
   transition: color 0.2s ease;
 }
@@ -31,7 +32,7 @@ p {
 a {
   font-family: 'Raleway';
   font-weight: 300;
-  font-size: 1.3em;
+  font-size: 2em;
   margin: 0;
   transition: color 0.2s ease;
   text-decoration: none !important;
@@ -44,10 +45,26 @@ a:hover {
 }
 
 a:active {
-  color: #EC9493  ;
+  color: #EC9493;
   transition: color 0.1s ease;
 }
 
 .element-padding {
   padding: 0 19.098% 0 19.098%;
+}
+
+/*--MEDIA QUERIES--*/
+
+@media (max-width : 768px) {
+  .content-container-nav, .skills-container{
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 5em;
+  }
+
+  p, a {
+    font-size: 1.5em;
+  }
 }

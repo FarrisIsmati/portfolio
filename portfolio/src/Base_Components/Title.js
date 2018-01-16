@@ -11,20 +11,19 @@ class Title extends Component {
       title,
       titleUnder,
       color,
-      size
+      color2,
     } = this.props
 
     const titleStyle = {
       color: color,
-      fontSize: '4em',
       margin: 0,
       display: 'inline-block'
     }
 
     return (
-      <div>
+      <div className="flex flex-column">
         <h1 ref="title" style={titleStyle} color={color}>{title}</h1>
-        { titleUnder ? <h1 style={titleStyle} color={color}>{titleUnder}</h1>:null }
+        { titleUnder ? <h1 style={titleStyle} color2={color2}>{titleUnder}</h1>:null }
       </div>
     )
   }
@@ -33,7 +32,6 @@ class Title extends Component {
 Title.propTypes = {
   title: PropTypes.string,
   color: PropTypes.string,
-  size: PropTypes.string
 }
 
 export default Title

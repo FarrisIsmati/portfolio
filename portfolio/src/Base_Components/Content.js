@@ -98,7 +98,7 @@ class Content extends Component {
 
               </div>
               :
-              <div className="flex">
+              <div className="flex skills-container">
                 {this.state.content.data ? skills:null}
               </div>
             }

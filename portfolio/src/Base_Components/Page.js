@@ -60,22 +60,15 @@ class Page extends Component {
       children,
       showBar,
       css,
-      cssTitle
+      cssTitle,
+      color
     } = this.props
 
     return (
       <div className={"flex " + css}>
-      {
-        this.state.renderBar ?
-        showBar ?
-        <VerticleBar width={'25px'} height={this.state.divHeight}/> :
-        null
-        :
-        null
-      }
         <div ref="pageContainer" className="flex flex-start">
           <div className={'page-title ' + cssTitle}>
-            <Title getTitleSize={this.getTitleSize} title={title} titleUnder={titleUnder} size={titleWidth} />
+            <Title color={color} getTitleSize={this.getTitleSize} title={title} titleUnder={titleUnder} />
           </div>
           <div ref="children">
             {children}

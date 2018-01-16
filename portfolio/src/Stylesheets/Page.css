@@ -5,21 +5,3 @@
 .page-title {
   margin-bottom: 10px;
 }
-
-.content-tech {
-  font-weight: 400;
-}
-
-.content-info {
-  font-weight: 200;
-}
-
-.link {
-  font-weight: 400;
-  transition: color 0.2s ease;
-}
-
-.link:hover {
-  color: #C3073F;
-  transition: color 0.3s ease;
-}
