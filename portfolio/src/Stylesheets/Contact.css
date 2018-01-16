@@ -26,12 +26,37 @@
 }
 
 .contact p, .contact a {
-  font-size: 1.4em;
+  font-size: 1.4em !important;
   font-weight: 200;
+  color: #FFFFFF;
+  transition: color 0.3s ease;
+}
+
+.resume-github-holder {
+  margin-top: 5px;
+}
+
+.contact p {
+  display: block;
+}
+
+#github, #portfolio {
+  display: inline-block;
+}
+
+#github:active, #portfolio:active {
+  color: #EC9493;
+  transition: color 0.1s ease;
+}
+
+#portfolio:hover, #github:hover {
+  color: #C3073F;
+  transition: color 0.3s ease;
+  cursor: pointer;
 }
 
 .link {
-  font-weight: 400;
+  font-weight: 200;
   transition: color 0.2s ease;
 }
 

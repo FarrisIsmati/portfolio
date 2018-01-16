@@ -87,7 +87,7 @@ a:active {
     margin-right: 0 !important;
   }
 
-  .project-link-holder, .code-link-holder {
+  .project-link-holder, .code-link-holder, .resume-github-holder {
     flex-direction: column;
   }
 
