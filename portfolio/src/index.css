@@ -56,12 +56,16 @@ a:active {
 /*--MEDIA QUERIES--*/
 
 @media (max-width : 768px) {
-  .content-container-nav, .skills-container{
+  .content-container-nav, .content-container, .skills-container{
     flex-direction: column;
   }
 
+  .arrow-holder, .arrow-holder-bottom {
+    display: none;
+  }
+
   h1 {
-    font-size: 5em;
+    font-size: 3.5em;
   }
 
   p, a {
