@@ -65,11 +65,24 @@ a:active {
 
 @media (max-width : 768px) {
   .element-padding {
-    padding: 0 15% 0 15%;
+    padding: 0 5%;
+  }
+
+  .project-link-holder p, #github, #portfolio {
+    font-weight: 400 !important;
+    font-size: 2em !important;
   }
 
   .content-container-nav, .content-container, .skills-container{
     flex-direction: column;
+  }
+
+  .content-container-nav p {
+    font-size: 1.8em !important;
+  }
+
+  p {
+    font-size: 1.2em;
   }
 
   .arrow-holder, .arrow-holder-bottom {
@@ -78,10 +91,6 @@ a:active {
 
   h1 {
     font-size: 3.5em;
-  }
-
-  p, a {
-    font-size: 1.2em;
   }
 
   .home:before {
