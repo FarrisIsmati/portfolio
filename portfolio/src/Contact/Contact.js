@@ -11,7 +11,7 @@ const Contact = () => (
     <p>703.980.2219</p>
     <p>farris.ismati@gmail.com</p>
     <div className="flex resume-github-holder">
-      <a target="_blank" href="https://drive.google.com/file/d/1U2_IBo8-o7As-ZOLt3NKmzq-j6fLFxiR/view"><p id="portfolio">Resume</p></a>
+      <a target="_blank" href="https://drive.google.com/file/d/1VdHvLo9Xyd4wJcHWUcARKPLMCWjCPaB1/view?usp=sharing"><p id="portfolio">Resume</p></a>
       <div className="border"></div>
       <a target="_blank" href="https://github.com/FarrisIsmati"><p id="github">Github</p></a>
     </div>

@@ -12,20 +12,31 @@ class Projects extends Component {
         <Page css={'projects'} cssTitle={'projects-title'} title={'Projects'} titleWidth={(window.innerWidth * .0917) + 'px'} height={'25px'}>
           <Content data={
             {
+              'Study.js,': {
+                info: 'An online study tool designed for storing all your accumulated knowledge in one place. Users can log in with their google account, create topics, and subtopics. Users can fill out each subtopic within a text editor that includes code highlighting. A General Assembly project.',
+                github: 'https://github.com/FarrisIsmati/studyjs_front_end',
+                backend: 'https://github.com/FarrisIsmati/studyjs_backend',
+                projects: true,
+                link: 'https://studyjs.surge.sh',
+                tech: 'React.js, Redux, Node.js, Express.js, OAuth, Quill, Mongoose, & MongoDB',
+                active: true
+              },
               'You Suck at Art,': {
                 info: 'A draw and guess game inspired by the children’s game Chinese Whispers, also known as Telephone. One user has to draw a random phrase, then the next user has to guess what that drawing is. This cycle goes on depending on the number of players. A General Assembly group project by Farris Ismati, Steven Connors, & Jack Tyburski.',
                 github: 'https://github.com/FarrisIsmati/telestrations_online',
                 backend: 'https://github.com/StevenC53/telestrations_online_back_end',
                 projects: true,
                 tech: 'React.js, Node.js, Express.js, HTML Canvas, Mongoose, & MongoDB',
-                image: 'https://image.ibb.co/b5DEuw/Screen_Shot_2018_01_03_at_9_40_41_AM.png', link: 'http://yousuckatart.surge.sh/',
-                active: true
+                image: 'https://image.ibb.co/b5DEuw/Screen_Shot_2018_01_03_at_9_40_41_AM.png',
+                link: 'http://yousuckatart.surge.sh/',
+                active: false
               },
               'DC Foodtrucks,': {
                 info: 'A concept website for tracking all DC metro area food trucks. Users can see the locations of the food trucks, comment on the trucks, and look up more information. Food truck owners can add new trucks and set their locations. A General Assembly project.', projects: true,
                 github: 'https://github.com/FarrisIsmati/food-truck-dc',
                 tech: 'Ruby on Rails, Devise, Cancan, JQuery, Google Maps API, Punchbox, Geocoder',
-                image: 'https://image.ibb.co/gzC7Ew/Screen_Shot_2018_01_03_at_9_40_25_AM.png', link: 'https://dc-food-trucks.herokuapp.com/companies',
+                image: 'https://image.ibb.co/gzC7Ew/Screen_Shot_2018_01_03_at_9_40_25_AM.png',
+                link: 'https://dc-food-trucks.herokuapp.com/companies',
                 active: false
               },
               'Hangman': {
