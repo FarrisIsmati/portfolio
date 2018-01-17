@@ -84,7 +84,7 @@ class App extends Component {
       <div className="app-main">
         <Element id="element-home" name="home" className="element-padding element">
           <Home>
-            <div className="flex content-container">
+            <div className="flex flex-wrap content-container-nav">
               <p>
                 <Link activeClass="active" to="projects" spy={true} smooth={true} duration={600} >
                   Projects,

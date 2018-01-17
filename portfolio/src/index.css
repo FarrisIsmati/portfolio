@@ -12,27 +12,24 @@ body {
 h1, p, a {
   color: #FFFFFF;
   user-select: none;
+  font-family: 'Raleway';
 }
 
 h1 {
   font-size: 6em;
   margin: 0;
-  font-family: 'Raleway';
   font-weight: 700;
 }
 
 p {
-  font-family: 'Raleway';
   font-weight: 400;
-  font-size: 2em;
+  font-size: 1.4em;
   margin: 0;
   transition: color 0.2s ease;
 }
 
 a {
-  font-family: 'Raleway';
-  font-weight: 300;
-  font-size: 2em;
+  font-weight: 400;
   margin: 0;
   transition: color 0.2s ease;
   text-decoration: none !important;
@@ -60,9 +57,17 @@ a:active {
   border-left: 2px solid #C3073F;
 }
 
+.arrow-holder, .arrow-holder-bottom {
+  font-size: 2em;
+}
+
 /*--MEDIA QUERIES--*/
 
 @media (max-width : 768px) {
+  .element-padding {
+    padding: 0 15% 0 15%;
+  }
+
   .content-container-nav, .content-container, .skills-container{
     flex-direction: column;
   }
@@ -76,7 +81,7 @@ a:active {
   }
 
   p, a {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   .home:before {

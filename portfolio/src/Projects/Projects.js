@@ -13,12 +13,12 @@ class Projects extends Component {
           <Content data={
             {
               'Study.js,': {
-                info: 'An online study tool designed for storing all your accumulated knowledge in one place. Users can log in with their google account, create topics, and subtopics. Users can fill out each subtopic within a text editor that includes code highlighting. A General Assembly project.',
+                info: 'An online study tool designed for storing all your accumulated knowledge in one place. Users can log in with their google account, create topics, and subtopics. Users can write content in each subtopic which includes syntax code highlighting. A General Assembly project.',
                 github: 'https://github.com/FarrisIsmati/studyjs_front_end',
                 backend: 'https://github.com/FarrisIsmati/studyjs_backend',
                 projects: true,
                 link: 'https://studyjs.surge.sh',
-                tech: 'React.js, Redux, Node.js, Express.js, OAuth, Quill, Mongoose, & MongoDB',
+                tech: 'React.js, Redux.js, Node.js, Express.js, OAuth, Quill, Mongoose, & MongoDB',
                 active: true
               },
               'You Suck at Art,': {

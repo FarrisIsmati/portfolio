@@ -7,7 +7,6 @@
               border-color .2s ease-in;
 }
 
-
 .projects-title h1:before {
   content: '';
   position: relative;
@@ -19,7 +18,6 @@
               right .1s ease-out,
               border-color .1s ease;
 }
-
 
 .projects {
   padding: 5% 0;
@@ -41,12 +39,7 @@
   margin: 0;
 }
 
-.project-link-holder a {
-  font-size: 1.4em;
-}
-
 .link {
-  font-weight: 400;
   transition: color 0.2s ease;
 }
 

@@ -1,3 +1,4 @@
+/*Border bar hover on Contact Page*/
 #element-contact:hover .contact-title h1:before {
   right: 0px;
   border-color: rgba(195,7,63,1) !important;
@@ -20,26 +21,21 @@
               border-color .1s ease;
 }
 
-
 .contact {
   padding: 5% 0;
 }
 
 .contact p, .contact a {
-  font-size: 1.4em !important;
   font-weight: 200;
-  color: #FFFFFF;
-  transition: color 0.3s ease;
 }
 
+
+/*Github/Resume Margin*/
 .resume-github-holder {
   margin-top: 5px;
 }
 
-.contact p {
-  display: block;
-}
-
+/*Prevents github/resume buttons from going full width*/
 #github, #portfolio {
   display: inline-block;
 }
@@ -53,14 +49,4 @@
   color: #C3073F;
   transition: color 0.3s ease;
   cursor: pointer;
-}
-
-.link {
-  font-weight: 200;
-  transition: color 0.2s ease;
-}
-
-.link:hover {
-  color: #C3073F;
-  transition: color 0.3s ease;
 }

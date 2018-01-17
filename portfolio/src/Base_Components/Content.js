@@ -80,7 +80,7 @@ class Content extends Component {
 
     return (
       <div>
-        <div className="flex content-container-nav">
+        <div className="flex flex-wrap content-container-nav">
           {nav}
         </div>
 
