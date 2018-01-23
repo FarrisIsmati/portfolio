@@ -24,7 +24,7 @@ class Skills extends Component {
                 page: 'skills'
               },
               'Methodologies,': {
-                data: ['Functional Programming,', 'Object Oriented Programming,', 'Unit Testing,', 'Git,', 'MVC Patterns'],
+                data: ['Object Oriented Programming,', 'MVC Pattern,', 'Unit Testing,', 'Git'],
                 active: false,
                 page: 'skills'
               },
