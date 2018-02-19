@@ -12,17 +12,25 @@ class Projects extends Component {
         <Page css={'projects'} cssTitle={'projects-title'} title={'Projects'} titleWidth={(window.innerWidth * .0917) + 'px'} height={'25px'}>
           <Content data={
             {
+              '@#%! Where Is It?,': {
+                info: 'A map based game where you have to find a location by asking yes/no questions. The application is being built with React and Redux on the front end. Mapbox GL API powers the map and Node, Express, Mongo and Websocket powers the back end. The entire application is being designed and developed by me. Follow my progress on github.',
+                projects: true,
+                github: 'https://github.com/FarrisIsmati/mapbox-app-react',
+                backend: 'https://github.com/FarrisIsmati/mapbox-app-node',
+                tech: 'React.js, Redux.js, Socket.io, Node.js, Express.js, Mongoose, & MongoDB',
+                active: true
+              },
               'Study.js,': {
-                info: 'An online study tool designed for storing all your accumulated knowledge in one place. Users can log in with their google account, create topics, and subtopics. Users can write content in each subtopic which includes syntax code highlighting. A General Assembly project.',
+                info: 'An online study tool designed for storing all your accumulated knowledge in one place. The application is built with React and Redux on the front end. Node, Express, and Mongo powers the back end. The entire applicaiton was designed and developed by me.',
                 github: 'https://github.com/FarrisIsmati/studyjs_front_end',
                 backend: 'https://github.com/FarrisIsmati/studyjs_backend',
                 projects: true,
                 link: 'https://studyjs.surge.sh',
                 tech: 'React.js, Redux.js, Node.js, Express.js, OAuth, Quill, Mongoose, & MongoDB',
-                active: true
+                active: false
               },
               'You Suck at Art,': {
-                info: 'A draw and guess game inspired by the children’s game Chinese Whispers, also known as Telephone. One user has to draw a random phrase, then the next user has to guess what that drawing is. This cycle goes on depending on the number of players. A General Assembly group project by Farris Ismati, Steven Connors, & Jack Tyburski.',
+                info: 'A draw and guess game inspired by the children’s game Chinese Whispers, also known as Telephone. The application is built with React on the front end. Node, Express, and Mongo powers the back end. The applicaiton was a group effort, I designed the User stories, Schemas, and majority of the React Components.',
                 github: 'https://github.com/FarrisIsmati/telestrations_online',
                 backend: 'https://github.com/StevenC53/telestrations_online_back_end',
                 projects: true,
@@ -32,7 +40,7 @@ class Projects extends Component {
                 active: false
               },
               'DC Foodtrucks,': {
-                info: 'A concept website for tracking all DC metro area food trucks. Users can see the locations of the food trucks, comment on the trucks, and look up more information. Food truck owners can add new trucks and set their locations. A General Assembly project.', projects: true,
+                info: 'A concept website for tracking all DC metro area food trucks. The application is built entirely in Ruby on Rails with additional libraries and the Google Maps API powering the map. This was my first Rails project. The entire applicaiton was designed and developed by me.', projects: true,
                 github: 'https://github.com/FarrisIsmati/food-truck-dc',
                 tech: 'Ruby on Rails, Devise, Cancan, JQuery, Google Maps API, Punchbox, Geocoder',
                 image: 'https://image.ibb.co/gzC7Ew/Screen_Shot_2018_01_03_at_9_40_25_AM.png',
@@ -40,7 +48,7 @@ class Projects extends Component {
                 active: false
               },
               'Hangman': {
-                info: 'A recreated version of Hangman. Players are prompted with a random word they need to guess. Players only have 7 guesses to figure out the word. If you guess the word correctly your score increases and if you guess incorrectly, your score gets reset. Overall high scores are saved. A General Assembly Project.',
+                info: `A recreated version of Hangman. Players are prompted with a random word they need to guess. Players only have 7 guesses to figure out the word. This was my first JavaScript program, and I'm proud of it too.`,
                 projects: true,
                 github: 'https://github.com/FarrisIsmati/farris-hangman',
                 tech: 'jQuery, HTML5, CSS3',

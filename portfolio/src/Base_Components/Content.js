@@ -92,8 +92,13 @@ class Content extends Component {
                 <p className="content-tech">{this.state.content.tech}</p>
                 <p className="content-info">{this.state.content.info}</p>
                 <div className="flex project-link-holder">
-                  <a className="a-tag" target="_blank" href={this.state.content.link}><p className="link">Site</p></a>
-                  <div className="border"></div>
+                  { this.state.content.link ?
+                    <div className="flex">
+                      <a className="a-tag" target="_blank" href={this.state.content.link}><p className="link">Site</p></a>
+                      <div className="border"></div>
+                    </div> :
+                    null
+                  }
                   { this.state.content.backend ?
                     <div className="flex code-link-holder">
                       <a className="a-tag" target="_blank" href={this.state.content.github}><p className="link">Frontend Code</p></a>
