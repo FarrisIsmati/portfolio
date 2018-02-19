@@ -30,7 +30,7 @@ class Projects extends Component {
                 active: false
               },
               'You Suck at Art,': {
-                info: 'A draw and guess game inspired by the children’s game Chinese Whispers, also known as Telephone. The application is built with React on the front end. Node, Express, and Mongo powers the back end. The applicaiton was a group effort, I designed the User stories, Schemas, and majority of the React Components.',
+                info: 'A draw and guess game inspired by the children’s game Chinese Whispers, also known as Telephone. The application is built with React on the front end. Node, Express, and Mongo powers the back end. The applicaiton was a group effort, I designed the User Stories, Schemas, and majority of the React Components.',
                 github: 'https://github.com/FarrisIsmati/telestrations_online',
                 backend: 'https://github.com/StevenC53/telestrations_online_back_end',
                 projects: true,
@@ -40,7 +40,7 @@ class Projects extends Component {
                 active: false
               },
               'DC Foodtrucks,': {
-                info: 'A concept website for tracking all DC metro area food trucks. The application is built entirely in Ruby on Rails with additional libraries and the Google Maps API powering the map. This was my first Rails project. The entire applicaiton was designed and developed by me.', projects: true,
+                info: 'A concept website for tracking all DC metro area food trucks. The application is built entirely in Ruby on Rails with additional libraries. This was my first Rails project. The entire applicaiton was designed and developed by me.', projects: true,
                 github: 'https://github.com/FarrisIsmati/food-truck-dc',
                 tech: 'Ruby on Rails, Devise, Cancan, JQuery, Google Maps API, Punchbox, Geocoder',
                 image: 'https://image.ibb.co/gzC7Ew/Screen_Shot_2018_01_03_at_9_40_25_AM.png',
