@@ -13,7 +13,7 @@ class Projects extends Component {
           <Content data={
             {
               '@#%! Where Is It?': {
-                info: 'A map based game where you have to find a location by asking yes/no questions. The application is being built with React and Redux on the front end. Mapbox GL API powers the map and Node, Express, Mongo and Websocket powers the back end. The entire application is being designed and developed by me. Follow my progress on github.',
+                info: 'A map based game where you have to find a location by asking yes/no questions. The application is built with React and Redux on the front end. Mapbox GL API powers the map and Node, Express, Mongo and Socket.io powers the back end. The entire applicaiton was designed and developed by me.',
                 projects: true,
                 link: 'https://fckwhereisit.surge.sh/',
                 github: 'https://github.com/FarrisIsmati/mapbox-app-react',
