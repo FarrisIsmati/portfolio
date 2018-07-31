@@ -13,17 +13,17 @@ class Skills extends Component {
         <div className="flex">
           <Content data={
             {
-              'Frontend,': {
+              'Frontend': {
                 data: ['ReactJS,', 'Redux,', 'ES6,', ,'jQuery,', 'HTML5,','CSS3'],
                 active: true,
                 page: 'skills'
               },
-              'Backend,': {
+              'Backend': {
                 data: ['NodeJS,','ExpressJS,','MongoDB,','SQL'],
                 active: false,
                 page: 'skills'
               },
-              'Methodologies,': {
+              'Methodologies': {
                 data: ['Object Oriented Programming,', 'MVC Pattern,', 'Unit Testing,', 'Git'],
                 active: false,
                 page: 'skills'

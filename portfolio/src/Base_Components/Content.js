@@ -11,8 +11,7 @@ class Content extends Component {
       content: this.props.data[Object.keys(this.props.data)[0]],
       buttons: this.props.data
     }
-    console.log(this.state.content.data)
-    console.log(this.props)
+
     this.showData = this.showData.bind(this)
     this.onClick = this.onClick.bind(this)
   }
@@ -43,22 +42,11 @@ class Content extends Component {
     })
   }
 
-  componentDidMount() {
-    console.log(this.state.content.image)
-  }
-
   render() {
-    const {
-      data
-    } = this.props
+    const { data } = this.props
 
-    const active = {
-      'color': '#C3073F'
-    }
-
-    const inactive = {
-      'color': '#FFFFFF'
-    }
+    const active = { 'color': '#C3073F', 'fontSize': '3em', 'marginRight': '30px' }
+    const inactive = { 'color': '#FFFFFF', 'fontSize': '3em', 'marginRight': '30px' }
 
     let nav = Object.keys(data).map((data,index) => {
       if (Object.values(this.state.buttons)[index].active) {
