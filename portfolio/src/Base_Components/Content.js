@@ -44,8 +44,7 @@ class Content extends Component {
 
   render() {
     const { data } = this.props
-
-    const active = { 'color': '#C3073F', 'fontSize': '3em', 'marginRight': '30px' }
+    const active = { 'color': '#C3073F', 'fontSize': '3em', 'marginRight': '30px', 'borderBottom': '3px solid' }
     const inactive = { 'color': '#FFFFFF', 'fontSize': '3em', 'marginRight': '30px' }
 
     let nav = Object.keys(data).map((data,index) => {
@@ -77,7 +76,7 @@ class Content extends Component {
             {
               this.state.content.projects ?
               <div>
-                <p className="content-tech">{this.state.content.tech}</p>
+                <p className="content-tech">Technology Used: {this.state.content.tech}</p>
                 <p className="content-info">{this.state.content.info}</p>
                 <div className="flex project-link-holder">
                   { this.state.content.link ?
