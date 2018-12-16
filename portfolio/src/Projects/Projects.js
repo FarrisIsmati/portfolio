@@ -13,14 +13,14 @@ class Projects extends Component {
           <Content data={
             {
               'Rollio DC': {
-                info: 'A complete redesign of how a food truck tracking application should look and feel. The application will be built with React and Redux on the front end. Node, Express, Mongo, Socket.io and Redis powers the back end. The application is currently underdevelopment by a small team.',
+                info: 'A complete redesign of how a food truck tracking application should look and feel. The application will be built with React and Redux on the front end. Node, Express, Mongo, Socket.io and Redis powering the back end. The application is currently underdevelopment by a small team.',
                 projects: true,
                 github: 'https://github.com/FarrisIsmati/dc-mobile-vendor-node',
                 tech: 'Node.js, Express.js, Socket.io, Redis, Mocha, Mongoose, & MongoDB',
                 active: true
               },
               '@#%! Where Is It?': {
-                info: 'A map based game where you have to find a location by asking yes/no questions. The application is built with React and Redux on the front end. Mapbox GL API powers the map and Node, Express, Mongo and Socket.io powers the back end. The entire applicaiton was designed and developed by me.',
+                info: 'A map based game where you have to find a location by asking yes/no questions. The application is built with React and Redux on the front end. Mapbox GL API powers the map and Node, Express, Mongo and Socket.io powering the back end. The entire applicaiton was designed and developed by me.',
                 projects: true,
                 link: 'https://fckwhereisit.surge.sh/',
                 github: 'https://github.com/FarrisIsmati/mapbox-app-react',
@@ -29,7 +29,7 @@ class Projects extends Component {
                 active: false
               },
               'Study.js': {
-                info: 'An online study tool designed for storing all your accumulated knowledge in one place. The application is built with React and Redux on the front end. Node, Express, and Mongo powers the back end. The entire applicaiton was designed and developed by me.',
+                info: 'An online study tool designed for storing all your accumulated knowledge in one place. The application is built with React and Redux on the front end. Node, Express, and Mongo powering the back end. The entire applicaiton was designed and developed by me.',
                 github: 'https://github.com/FarrisIsmati/studyjs_front_end',
                 backend: 'https://github.com/FarrisIsmati/studyjs_backend',
                 projects: true,
