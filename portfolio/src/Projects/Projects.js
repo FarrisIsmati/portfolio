@@ -12,29 +12,27 @@ class Projects extends Component {
         <Page css={'projects'} cssTitle={'projects-title'} title={'Projects'} titleWidth={(window.innerWidth * .0917) + 'px'} height={'25px'}>
           <Content data={
             {
-              'Rollio DC': {
-                info: 'A complete redesign of how a food truck tracking application should look and feel. The application will be built with React and Redux on the front end. Node, Express, Mongo, Socket.io and Redis powering the back end. The application is currently underdevelopment by a small team.',
+              'Collectible Non-fungible Tokens': {
+                info: 'A series of 10,000 collectible NFTs generated randomly and sold on a React based website. The application is being built with React.js & Web3.js on the front end. AWS Lambda, AWS DynamoDB, & API Gateway powering the back end. Lastly an ERC-721 based contract written in Solidity to deliver the NFTs. The application is currently in development and the repo is private because I will not share the secret sauce.',
                 projects: true,
-                github: 'https://github.com/FarrisIsmati/dc-mobile-vendor-node',
-                tech: 'Node.js, Express.js, Socket.io, Redis, Mocha, Mongoose, & MongoDB',
+                github: 'https://github.com/FarrisIsmati/naughtyfungibletokens',
+                tech: 'Python, React.js, Solidity, AWS (Lambda, API Gateway, & DynamoDB)',
                 active: true
               },
+              'Rollio': {
+                info: 'A complete redesign of how a food truck tracking application should look and feel. The application is being built with React.js & Redux on the front end. Node.js server hosted by AWS ECS on the back end. Lastly a Spacy, Keras, & Tensorflow Natural Language Processing solution to parse truck locations from Twitter with AWS Lambda. The application is currently under development.',
+                projects: true,
+                github: 'https://github.com/FarrisIsmati/rollio',
+                tech: 'Node.js, Express.js, Socket.io, Spacy, Tensorflow, Keras, Redis, Mocha, Mongoose, MongoDB, AWS (ECS, Lambda, & Redis)',
+                active: false
+              },
               '@#%! Where Is It?': {
-                info: 'A map based game where you have to find a location by asking yes/no questions. The application is built with React and Redux on the front end. Mapbox GL API powers the map and Node, Express, Mongo and Socket.io powering the back end. The entire applicaiton was designed and developed by me.',
+                info: 'A map based game where you have to find a location by asking yes/no questions. The application is built with React & Redux on the front end. Mapbox GL API powers the map and a Node.js server powering the back end.',
                 projects: true,
                 link: 'https://fckwhereisit.surge.sh/',
                 github: 'https://github.com/FarrisIsmati/mapbox-app-react',
                 backend: 'https://github.com/FarrisIsmati/mapbox-app-node',
                 tech: 'React.js, Redux.js, Socket.io, Node.js, Express.js, Mapbox GL JS API, Mongoose, & MongoDB',
-                active: false
-              },
-              'Study.js': {
-                info: 'An online study tool designed for storing all your accumulated knowledge in one place. The application is built with React and Redux on the front end. Node, Express, and Mongo powering the back end. The entire applicaiton was designed and developed by me.',
-                github: 'https://github.com/FarrisIsmati/studyjs_front_end',
-                backend: 'https://github.com/FarrisIsmati/studyjs_backend',
-                projects: true,
-                link: 'https://studyjs.surge.sh',
-                tech: 'React.js, Redux.js, Node.js, Express.js, OAuth, Quill, Mongoose, & MongoDB',
                 active: false
               }
             }

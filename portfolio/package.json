@@ -15,7 +15,8 @@
     "react-scripts": "1.0.17",
     "react-scroll": "^1.7.4",
     "react-scrollspy": "^3.3.4",
-    "react-waypoint": "^7.3.4"
+    "react-waypoint": "^7.3.4",
+    "surge": "^0.23.0"
   },
   "scripts": {
     "start": "react-scripts start",

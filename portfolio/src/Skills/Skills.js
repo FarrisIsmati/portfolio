@@ -14,23 +14,23 @@ class Skills extends Component {
           <Content data={
             {
               'Languages': {
-                data: ['JavaScript/ES6,', 'Java'],
+                data: ['JavaScript/ES6,', 'TypeScript,', 'HTML,', 'CSS,', 'SASS,', 'SQL,', 'Python, & ', 'Solidity'],
                 active: true,
                 page: 'skills'
               },
               'Frontend': {
-                data: ['React,', 'Redux,', 'Backbone,', 'jQuery,', 'HTML5,','CSS3,', 'SASS'],
+                data: ['React &', 'Redux'],
                 active: false,
                 page: 'skills'
               },
               'Backend': {
-                data: ['NodeJS,','ExpressJS,','Socket.io,','MongoDB,','Redis,','MySQL'],
+                data: ['Node.js,','Express.js,','Socket.io,','MongoDB,','Redis,', 'RabbitMQ, &','AWS'],
                 active: false,
                 page: 'skills'
               },
 
               'Other': {
-                data: ['Git,', 'Unit Testing,', 'Adobe Creative Cloud'],
+                data: ['Git,', 'Docker,', 'Unit Testing (Mocha/Chai/PyTest), &', 'AWS Solutions Architect Certified'],
                 active: false,
                 page: 'skills'
               }
