@@ -25,15 +25,6 @@ class Projects extends Component {
                 github: 'https://github.com/FarrisIsmati/rollio',
                 tech: 'Node.js, Express.js, Socket.io, Spacy, Tensorflow, Keras, Redis, Mocha, Mongoose, MongoDB, AWS (ECS, Lambda, & Redis)',
                 active: false
-              },
-              '@#%! Where Is It?': {
-                info: 'A map based game where you have to find a location by asking yes/no questions. The application is built with React & Redux on the front end. Mapbox GL API powers the map and a Node.js server powering the back end.',
-                projects: true,
-                link: 'https://fckwhereisit.surge.sh/',
-                github: 'https://github.com/FarrisIsmati/mapbox-app-react',
-                backend: 'https://github.com/FarrisIsmati/mapbox-app-node',
-                tech: 'React.js, Redux.js, Socket.io, Node.js, Express.js, Mapbox GL JS API, Mongoose, & MongoDB',
-                active: false
               }
             }
           }/>
